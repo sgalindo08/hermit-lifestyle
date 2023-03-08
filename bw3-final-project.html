@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hermit Lifestyle</title>
+    <style>
+      body {
+        background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/178/original/hermit.jpeg?1676228987")
+          center/cover;
+      }
+      h1 {
+        text-align: center;
+        border: rgb(0, 0, 0) solid 2px;
+        font-size: 40px;
+        border-radius: 3px;
+        background: white;
+        color: #48705d;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+      h2 {
+        text-align: center;
+        border: rgb(0, 0, 0) solid 2px;
+        font-size: 40px;
+        border-radius: 3px;
+        background: #96785e;
+        margin: 0 auto;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+      h3 {
+        text-align: center;
+        font-style: italic;
+        font-size: 30px;
+        color: #3d4a1f;
+        padding: 20px;
+        margin: 0 auto;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 47%;
+        padding: 10px;
+      }
+      p {
+        line-height: 1.5;
+        color: #540000;
+        font-style: monospace;
+        font-size: 20px;
+        text-align: center;
+        margin: 10;
+        padding: 0 auto;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 8px 10px;
+        font-size: 15px;
+        background: #96785e;
+        color: white;
+        border-radius: 7px;
+        box-shadow: 3px 3px 8px rgba(104, 104, 104, 0.2);
+        transition: all 150ms ease-in-out;
+      }
+      a {
+        text-decoration: none;
+        color: #98c3ae;
+      }
+      strong {
+        font-style: italic;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      .second-container {
+        background-color: #fcfaef;
+        border: 3px solid #96785e;
+        border-radius: 10px;
+        margin: 20px 25px;
+        padding: 20px 15px;
+        opacity: 0.8;
+      }
+      .footer {
+        border: none;
+        font-size: small;
+        font-style: thin;
+        color: #e2e5e4;
+      }
+      .read-more {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #305041;
+      }
+      .read-more:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="second-container">
+        <h1>HERMIT 🪵</h1>
+        <h2>LIFESTYLE 🌱</h2>
+        <h3>The Hermits Cousin Is An Introvert</h3>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/769/original/hermit.jpeg?1670359907"
+          alt="Cabin in the woods"
+        />
+        <hr />
+        <p>
+          <strong>H e r m i t </strong> (hur-muht) is someone who likes to be
+          alone, far from people, sometimes because of their religious beliefs
+          or maybe because they simply want some privacy. They like living solo,
+          alone in the woods, up in a mountain, or sometimes they live in a city
+          without hardly ever leaving their apartment.
+        </p>
+        <a
+          href="https://www.saturdayeveningpost.com/2013/06/urban-hermit/"
+          target="_blank"
+          class="read-more"
+        >
+          Read More
+        </a>
+        <hr />
+        <button>Click Here</button>
+      </div>
+      <p class="footer">
+        This page was coded by
+        <a
+          href="https://www.linkedin.com/in/stacy-galindo-438430179/"
+          target="_blank"
+          >Stacy Galindo</a
+        >
+        with HTML, CSS, and JavaScript
+      </p>
+    </div>
+    <script>
+      let you = prompt(
+        "Would you consider yourself an introvert or an extrovert?"
+      );
+      you = you.toLowerCase();
+      you = you.trim();
+      if (you === "introvert") {
+        alert("Nice! That means you will like this website!");
+      } else {
+        alert("That's nice! Everyone is different in their own way!");
+      }
+    </script>
+    <script>
+      function clickHere() {
+        let me = prompt(
+          "Now that you know a bit more about hermits, would you say you're more of a hermit or an introvert?"
+        );
+        me = me.toLocaleLowerCase();
+        me = me.trim();
+        if (me === "hermit") {
+          alert("Awesome! You should read more about it!");
+        } else {
+          alert("That's great! I hope you still enojyed my page!");
+        }
+      }
+      let clickButton = document.querySelector("button");
+      clickButton.addEventListener("click", clickHere);
+    </script>
+  </body>
+</html>
